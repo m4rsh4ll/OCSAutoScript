@@ -69,7 +69,7 @@ rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/m4rsh4ll/OCSAutoScript/master/nginx.conf"
 mkdir -p /usr/share/m4rshall
-echo "<pre>Script by M4rshall</pre>" > /usr/share/m4rshall/index.html
+echo "" > /usr/share/m4rshall/index.html
 wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/m4rsh4ll/OCSAutoScript/master/vps.conf"
 service nginx restart
 
