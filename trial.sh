@@ -1,7 +1,6 @@
 #!/bin/bash
 #Script auto create trial user SSH
 #will expired after 1 day
-#modified by Clrkz
 
 IP=`dig +short myip.opendns.com @resolver1.opendns.com`
 
