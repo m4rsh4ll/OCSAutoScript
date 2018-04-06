@@ -251,7 +251,7 @@ echo "SSL      : 8888"  | tee -a log-install.txt
 echo "Squid3   : 8000, 8080 (limit to IP SSH)"  | tee -a log-install.txt
 echo "OpenVPN  : TCP 443"  | tee -a log-install.txt
 echo "badvpn   : badvpn-udpgw port 7300"  | tee -a log-install.txt
-echo "nginx    : 81"  | tee -a log-install.txt
+echo "nginx    : 9999"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "----------"  | tee -a log-install.txt
 echo "Webmin   : http://$MYIP:10000/"  | tee -a log-install.txt
