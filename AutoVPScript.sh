@@ -74,10 +74,11 @@ wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/m4rsh4ll/O
 service nginx restart
 
 # Install OpenVPN
-wget -O /etc/openvpn/openvpn.tar "https://github.com/m4rsh4ll/OCSAutoScript/master/openvpn-debian.tar"
+wget -O /etc/openvpn/openvpn.tar "https://raw.githubusercontent.com/m4rsh4ll/OCSAutoScript/master/openvpn-debian.tar"
 cd /etc/openvpn/
 tar xf openvpn.tar
 wget -O /etc/openvpn/server.conf "https://raw.githubusercontent.com/m4rsh4ll/OCSAutoScript/master/server.conf"
+wget -O /etc/openvpn/keys/dh2048.pem "https://raw.githubusercontent.com/m4rsh4ll/OCSAutoScript/master/dh2048.pem"
 rm openvpn.tar
 service openvpn restart
 sysctl -w net.ipv4.ip_forward=1
