@@ -40,7 +40,7 @@ wget -O /etc/apt/sources.list "https://raw.githubusercontent.com/m4rsh4ll/OCSAut
 wget "http://www.dotdeb.org/dotdeb.gpg"
 cat dotdeb.gpg | apt-key add -;rm dotdeb.gpg
 sh -c 'echo "deb http://download.webmin.com/download/repository sarge contrib" > /etc/apt/sources.list.d/webmin.list'
-wget -qO - http://www.webmin.com/jcameron-key.asc | apt-key add -
+wget -qO - https://raw.githubusercontent.com/m4rsh4ll/OCSAutoScript/master/jcameron-key.asc | apt-key add -
 
 # Remove Some Unused Applications
 apt-get -y --purge remove samba*;
