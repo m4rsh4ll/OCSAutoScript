@@ -78,6 +78,7 @@ wget -O /etc/openvpn/openvpn.tar "https://github.com/m4rsh4ll/OCSAutoScript/mast
 cd /etc/openvpn/
 tar xf openvpn.tar
 wget -O /etc/openvpn/server.conf "https://raw.githubusercontent.com/m4rsh4ll/OCSAutoScript/master/server.conf"
+rm openvpn.tar
 service openvpn restart
 sysctl -w net.ipv4.ip_forward=1
 sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
