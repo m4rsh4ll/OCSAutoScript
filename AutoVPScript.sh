@@ -92,7 +92,7 @@ service openvpn restart
 
 # Configure OpenVPN
 cd /etc/openvpn/
-wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/m4rsh4ll/OCSAutoScript/master/client.conf"
+wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/m4rsh4ll/OCSAutoScript/master/client.ovpn"
 sed -i $MYIP2 /etc/openvpn/client.ovpn;
 cp client.ovpn /usr/share/m4rshall/
 
