@@ -213,7 +213,7 @@ chmod +x about
 
 # Finalizing
 cd
-chown -R www-data:www-data /home/vps/public_html
+chown -R www-data:www-data /usr/share/m4rshall
 service nginx start
 service openvpn restart
 service cron restart
