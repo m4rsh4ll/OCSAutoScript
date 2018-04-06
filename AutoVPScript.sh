@@ -87,6 +87,7 @@ iptables -t nat -I POSTROUTING -s 192.168.100.0/24 -o eth0 -j MASQUERADE
 iptables-save > /etc/iptables_yg_baru_dibikin.conf
 wget -O /etc/network/if-up.d/iptables "https://raw.githubusercontent.com/m4rsh4ll/OCSAutoScript/master/iptables"
 chmod +x /etc/network/if-up.d/iptables
+chmod -R 755 /etc/openvpn/*
 service openvpn restart
 
 # Configure OpenVPN
