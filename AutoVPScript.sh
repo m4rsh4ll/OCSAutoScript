@@ -186,7 +186,7 @@ service dropbear restart
 
 # Install XML-Parser
 cd
-yes yes | apt-get libxml-parser-perl
+apt-get -y --force-yes -f install libxml-parser-perl
 
 # Download Scripts
 cd /usr/bin
